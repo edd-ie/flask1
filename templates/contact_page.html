@@ -17,9 +17,33 @@
     input{
         font-family: "Lucida Handwriting", cursive;
     }
+    body{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/static/images/coffee.jpeg") ;
+        height: 670px;
+        background-size: cover;
+        background-position: center;
+    }
+    form{
+
+        height: 70px;
+        width: 700px;
+        padding-left: 200px;
+
+    }
+    label{
+        color: white;
+    }
+    . {
+        border-radius: 50px;
+    }
+    .btn-primary{
+        font-family: "Lobster", cursive;
+    }
 
 </style>
+
 <body>
+<a class="btn btn-primary" href="/" role="button" style="float: right; margin-top: 5px; margin-right: 5px; border-radius: 15px;">Home</a><br>
 
 <form>
     <div class="form-group">
@@ -49,6 +73,8 @@
   </div><br>
 
   <button type="submit" class="btn btn-primary">Submit</button>
+
+    </div>
 </form>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
