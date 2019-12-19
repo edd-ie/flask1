@@ -1,0 +1,131 @@
+from flask import Flask, render_template, request, redirect, url_for, flash
+import psycopg2
+import pygal
+from flask_sqlalchemy import SQLAlchemy
+from Config.Config import Development
+
+app = Flask(__name__)
+app.config.from_object(Development)
+# app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:sigma-omega@127.0.0.1:5432/sales_demo"
+# app.config['SECRET_KEY'] = 'Annoying'
+# app.config['DEBUG'] = True
+db = SQLAlchemy(app)
+
+from models.inventories import Inventories
+from models.sales import Sales
+
+
+@app.before_first_request
+def create_tables():
+    db.create_all()
+
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+
+@app.route('/edit/<int:id>', methods=['POST', 'GET'])
+def edit(id):
+    record = Inventories.fetch_one_record(id)
+
+    if request.method == 'POST':
+        record.name = request.form['name']
+        record.category = request.form['category']
+        record.buying_price = request.form['buying_price']
+        record.selling_price = request.form['selling_price']
+        record.stock = request.form['stock']
+
+        db.session.commit()
+
+        return redirect(url_for('inventory'))
+
+    return render_template('edit.html', record=record)
+
+
+
+@app.route('/viewsales/<int:id>', methods=['POST', 'GET'])
+def view_sales(id):
+    record = Inventories.fetch_one_record(id)
+    return render_template('sales.html', record=record)
+
+
+@app.route('/inventory', methods=['POST', 'GET'])
+def inventory():
+    records = Inventories.fetch_all_records()
+    return render_template('Inventory.html', records=records)
+
+
+@app.route('/delete/<int:id>', methods=['POST', 'GET'])
+def delete(id):
+    record = Inventories.fetch_one_record()
+    db.session.delete(record)
+    db.session.commit()
+    flash("Item Deleted", 'Danger')
+    return redirect(url_for('inventory'))
+
+
+@app.route('/contact')
+def contact():
+    return render_template('contact_page.html')
+
+
+@app.route('/add_inventory', methods=['POST', 'GET'])
+def add_inv():
+    if request.method == 'POST':
+        name = request.form['name']
+        category = request.form['category']
+        buying_price = request.form['buying_price']
+        selling_price = request.form['selling_price']
+        stock = request.form['stock']
+    record = Inventories(name=name, category=category, buying_price=buying_price,
+                         selling_price=selling_price, stock=stock)
+    record.add_records()
+    return redirect(url_for('inventory'))
+
+
+@app.route('/salepro/<int:id>', methods=['POST', 'GET'])
+def makeSales(id):
+    record = Inventories.fetch_one_record(id)
+    if record:
+        if request.method == 'POST':
+            quantity = request.form['quantity']
+            new_stock = record.stock - int(quantity)
+            record.stock = new_stock
+            db.session.commit()
+            sales = Sales(inv_id=id, quantity=quantity)
+            sales.add_records()
+            flash('You successfully made a sale', 'success')
+    return redirect(url_for('inventory'))
+
+
+@app.route('/dashboard')
+def piechart():
+    ratios = [("men", 5), ("ladies", 9)]
+    pie_chart = pygal.Pie()
+    pie_chart.title = 'Browser usage in February 2012 (in %)'
+    pie_chart.add(ratios[0][0], ratios[0][1])
+    pie_chart.add(ratios[1][0], ratios[1][1])
+    # pie_chart.add('Chrome', 36.3)
+    # pie_chart.add('Safari', 4.5)
+    # pie_chart.add('Opera', 2.3)
+    pie_data = pie_chart.render_data_uri()
+    dt = [
+        {'month': 'Jan', 'total': 22}, {'month': 'Feb', 'total': 27}, {'month': 'Mar', 'total': 23},
+        {'month': 'Apr', 'total': 20}, {'month': 'May', 'total': 12},
+    ]
+    s = [d['month'] for d in dt]
+    x = [v['total'] for v in dt]
+
+    graph = pygal.Line()
+    graph.title = '% Change Coolness of programming languages over time.'
+    graph.x_labels = s
+    graph.add('total', x)
+    # graph.add('Java', [15, 45, 76, 80, 91, 95])
+    # graph.add('C++', [5, 51, 54, 102, 150, 201])
+    # graph.add('All others combined!', [5, 15, 21, 55, 92, 105])
+    graph_data = graph.render_data_uri()
+    return render_template('dashboard.html', pie_data=pie_data, graph_data=graph_data)
+
+if __name__ == '__main__':
+    app.run()
