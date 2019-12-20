@@ -25,3 +25,7 @@ class Inventories(db.Model):
     @classmethod
     def fetch_one_record(cls, inv_id):
         return cls.query.filter_by(inv_id=inv_id).first()
+
+ # class Authenticator:
+ #    while Inventories.stock <= 0:
+ #        print("Stock Refill")

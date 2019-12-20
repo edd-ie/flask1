@@ -1,48 +1,82 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 
 /*----------Navigation-----------*/
-#nav-bar{
-    position: sticky;
-    top: 0;
-    z-index: 10;
+
+li, a, button {
+    font-family: "Lobster", cursive;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
 }
 
-.navbar-brand img{
-    height: 60px;
-    width: 70px;
-    padding-left: 4px;
+.nav_link {
+    list-style: none;
 }
-.navbar-nav li a{
-    float: right;
-    text-align: left;
+
+.nav_link li {
+    display: inline-block;
+    padding: 0px 20px;
 }
-#nav-bar ul li a:hover{
-    color: #0064FF!important;
+
+.nav_link li a {
+    transition: all 0.3s ease 0s;
 }
-#nav-bar{
-    background: #fff;
+
+.nav_link li a:hover {
+    color: #008Ba9;
 }
-.navbar-toggler{
-    border: none!important;
-}
-.nav-link{
-    color: #555!important;
-    font-weight: 600;
-    font-size: 16px;
-}
-#slider{
+
+/*#nav-bar {*/
+/*    position: sticky;*/
+/*    top: 0;*/
+/*    z-index: 10;*/
+/*}*/
+
+/*.navbar-brand img {*/
+/*    height: 60px;*/
+/*    width: 70px;*/
+/*    padding-left: 4px;*/
+/*}*/
+
+/*.navbar-nav li a {*/
+/*    float: right;*/
+/*    text-align: left;*/
+/*}*/
+
+/*#nav-bar ul li a:hover {*/
+/*    color: #0064FF !important;*/
+/*}*/
+
+/*#nav-bar {*/
+/*    background: #fff;*/
+/*}*/
+
+/*.navbar-toggler {*/
+/*    border: none !important;*/
+/*}*/
+
+/*.nav-link {*/
+/*    color: #555 !important;*/
+/*    font-weight: 600;*/
+/*    font-size: 16px;*/
+/*}*/
+
+#slider {
     width: 100%;
 }
-.carousel-caption{
+
+.carousel-caption {
     top: 50%;
     transform: translateY(-50%);
-    bottom: initial!important;
+    bottom: initial !important;
 }
-.carousel-caption h5{
+
+.carousel-caption h5 {
     color: white;
     font-family: "Lucida Calligraphy";
     font-size: 40px;
