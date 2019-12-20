@@ -16,35 +16,36 @@
 </head>
 <body>
 
-{{ record.id }}
+{{ record.inv_id }}
 {{ record.name }}
 
-
-<form action="/edit/{{ record.id }}" method="POST">
-    <div class="form-group">
-        <label for="examplePotato" style="color: black">Name</label>
-        <input name="name" value="{{ record.name }}" type="text" class="form-control" id="examplePotato1">
-    </div>
-    <div class="form-group">
-        <label for="example_service" style="color: black">Category</label>
-        <input name="category" value="{{ record.category }}" type="text" class="form-control" id="example_service">
-    </div>
-    <div class="form-group">
-        <label for="example_100" style="color: black">Buying Price</label>
-        <input name="buying_price" value="{{ record.buying_price }}" type="number" class="form-control"
-               id="example_100">
-    </div>
-    <div class="form-group">
-        <label for="example_200" style="color: black">Selling Price</label>
-        <input name="selling_price" value="{{ record.selling_price }}" type="number" class="form-control"
-               id="example_200">
-    </div>
-    <div class="form-group">
-        <label for="example_5" style="color: black">Stock</label>
-        <input name="stock" value="{{ record.stock }}" type="number" class="form-control" id="example_5">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<div class="container">
+    <form action="/edit/{{ record.inv_id }}" method="POST">
+        <div class="form-group">
+            <label for="examplePotato" style="color: black">Name</label>
+            <input name="name" type="text" value="{{ record.name }}" class="form-control" id="examplePotato1">
+        </div>
+        <div class="form-group">
+            <label for="example_service" style="color: black">Category</label>
+            <input name="category" type="text" value="{{ record.category }}" class="form-control" id="example_service">
+        </div>
+        <div class="form-group">
+            <label for="example_100" style="color: black">Buying Price</label>
+            <input name="buying_price" type="number" value="{{ record.buying_price }}" class="form-control"
+                   id="example_100">
+        </div>
+        <div class="form-group">
+            <label for="example_200" style="color: black">Selling Price</label>
+            <input name="selling_price" type="number" value="{{ record.selling_price }}" class="form-control"
+                   id="example_200">
+        </div>
+        <div class="form-group">
+            <label for="example_5" style="color: black">Stock</label>
+            <input name="stock" type="number" value="{{ record.stock }}" class="form-control" id="example_5">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

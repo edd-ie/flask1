@@ -1,4 +1,5 @@
 from main import db
+from models.sales import Sales
 
 
 class Inventories(db.Model):
@@ -9,19 +10,18 @@ class Inventories(db.Model):
     category = db.Column(db.String(20), nullable=False)
     stock = db.Column(db.Integer, nullable=False)
 
+    sales = db.relationship('Sales', backref='inventory', lazy=True)
+
     def add_records(self):
         db.session.add(self)
-
         db.session.commit()
 
-        # Fetch all records
-
+    # Fetch all records
     @classmethod
     def fetch_all_records(cls):
         return cls.query.all()
 
     # fetch one record
-
     @classmethod
-    def fetch_one_record(cls,id):
-        return cls.query.filter_by(id=id).first()
+    def fetch_one_record(cls, inv_id):
+        return cls.query.filter_by(inv_id=inv_id).first()

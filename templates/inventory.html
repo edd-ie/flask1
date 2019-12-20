@@ -139,7 +139,7 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <form action="/salepro/{{ each.id }}" method="POST">
+                                                <form action="/salepro/{{ each.inv_id }}" method="POST">
                                                     <div class="form-group">
                                                         <label for="exampleFormControlInput1">Quantity</label>
                                                         <input name="quantity" type="string" class="form-control"
@@ -155,17 +155,17 @@
                                     </div>
                                 </div>
                             </td>
-                            <td style="color: white"><a href="/viewsales/{{ each.id }}">
+                            <td style="color: white"><a href="/view_sales/{{ each.inv_id }}">
                                 <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">View
                                     Sales
                                 </button>
                             </a></td>
-                            <td><a href="/delete/{{ each.id }}">
+                            <td><a href="/delete/{{ each.inv_id }}">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal"
                                         data-target="#deleteModal">Delete
                                 </button>
                             </a></td>
-                            <td><a href="/edit/{{ each.id }}">
+                            <td><a href="/edit/{{ each.inv_id }}">
                                 <button type="button" class="btn btn-outline-secondary" data-dismiss="modal"
                                         data-target="#editModal">Edit
                                 </button>
