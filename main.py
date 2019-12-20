@@ -2,13 +2,11 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 import pygal
 import psycopg2
 from flask_sqlalchemy import SQLAlchemy
-from Config.Config import Development
+from Config.Config import Production
 
 app = Flask(__name__)
-app.config.from_object(Development)
-# app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:sigma-omega@127.0.0.1:5432/sales_demo"
-# app.config['SECRET_KEY'] = 'Annoying'
-# app.config['DEBUG'] = True
+app.config.from_object(Production)
+
 db = SQLAlchemy(app)
 
 from models.inventories import Inventories
