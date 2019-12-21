@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4dea7411-33fa-4dbb-9750-c082bd0d56b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +155,8 @@
       <workItem from="1576762754675" duration="643000" />
       <workItem from="1576770463434" duration="5405000" />
       <workItem from="1576825847526" duration="627000" />
-      <workItem from="1576850842507" duration="10685000" />
+      <workItem from="1576850842507" duration="12065000" />
+      <workItem from="1576863532165" duration="224000" />
     </task>
     <servers />
   </component>
@@ -192,26 +192,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="442" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1576257683294" />
-    <state x="363" y="111" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576252122234">
+    <state x="363" y="111" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576863059127">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="363" y="111" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1576252122234" />
-    <state width="660" height="168" key="GridCell.Tab.0.bottom" timestamp="1576859834463">
+    <state x="363" y="111" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1576863059127" />
+    <state width="1310" height="2" key="GridCell.Tab.0.bottom" timestamp="1576863047880">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="660" height="168" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1576859834463" />
-    <state width="660" height="168" key="GridCell.Tab.0.center" timestamp="1576859834463">
+    <state width="1310" height="2" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1576863047880" />
+    <state width="1310" height="2" key="GridCell.Tab.0.center" timestamp="1576863047880">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="660" height="168" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1576859834463" />
-    <state width="660" height="168" key="GridCell.Tab.0.left" timestamp="1576859834463">
+    <state width="1310" height="2" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1576863047880" />
+    <state width="1310" height="2" key="GridCell.Tab.0.left" timestamp="1576863047880">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="660" height="168" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1576859834463" />
-    <state width="660" height="168" key="GridCell.Tab.0.right" timestamp="1576859834463">
+    <state width="1310" height="2" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1576863047880" />
+    <state width="1310" height="2" key="GridCell.Tab.0.right" timestamp="1576863047880">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="660" height="168" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1576859834463" />
+    <state width="1310" height="2" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1576863047880" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1575393321471">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
