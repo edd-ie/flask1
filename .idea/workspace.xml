@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4dea7411-33fa-4dbb-9750-c082bd0d56b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
       <recent name="E:\Python\I_M_S\static\images" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="Flask server.Flask (main.py)">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/I_M_S/templates/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -157,6 +158,9 @@
       <workItem from="1576825847526" duration="627000" />
       <workItem from="1576850842507" duration="12065000" />
       <workItem from="1576863532165" duration="224000" />
+      <workItem from="1576949102012" duration="2344000" />
+      <workItem from="1577086032061" duration="380000" />
+      <workItem from="1577115023782" duration="76000" />
     </task>
     <servers />
   </component>
@@ -196,22 +200,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="363" y="111" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1576863059127" />
-    <state width="1310" height="2" key="GridCell.Tab.0.bottom" timestamp="1576863047880">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1308" height="200" key="GridCell.Tab.0.bottom" timestamp="1576956309764">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="2" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1576863047880" />
-    <state width="1310" height="2" key="GridCell.Tab.0.center" timestamp="1576863047880">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1306" height="200" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1576950815108" />
+    <state width="1308" height="200" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576956309764" />
+    <state width="1308" height="200" key="GridCell.Tab.0.center" timestamp="1576956309763">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="2" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1576863047880" />
-    <state width="1310" height="2" key="GridCell.Tab.0.left" timestamp="1576863047880">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1306" height="200" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1576950815108" />
+    <state width="1308" height="200" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1576956309763" />
+    <state width="1308" height="200" key="GridCell.Tab.0.left" timestamp="1576956309763">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="2" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1576863047880" />
-    <state width="1310" height="2" key="GridCell.Tab.0.right" timestamp="1576863047880">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1306" height="200" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1576950815108" />
+    <state width="1308" height="200" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1576956309763" />
+    <state width="1308" height="200" key="GridCell.Tab.0.right" timestamp="1576956309764">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1310" height="2" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1576863047880" />
+    <state width="1306" height="200" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1576950815108" />
+    <state width="1308" height="200" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1576956309764" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1575393321471">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -236,6 +244,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1576773814563" />
+    <state x="368" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576950597867">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="368" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1576950597867" />
     <state x="0" y="0" width="606" height="768" key="find.popup" timestamp="1576593320061">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -252,6 +264,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/I_M_S$I_M_S.coverage" NAME="I_M_S Coverage Results" MODIFIED="1576515507803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/I_M_S$Flask__app_py_.coverage" NAME="Flask (main.py) Coverage Results" MODIFIED="1576779876420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/I_M_S$Flask__main_py_.coverage" NAME="Flask (main.py) Coverage Results" MODIFIED="1576858787281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/I_M_S$Flask__main_py_.coverage" NAME="Flask (main.py) Coverage Results" MODIFIED="1576950815100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
